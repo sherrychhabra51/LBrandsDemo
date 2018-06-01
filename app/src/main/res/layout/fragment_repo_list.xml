@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/tools">
+
+    <data class='RepoListBinding'>
+        <import type="android.view.View" />
+
+        <variable
+            name="repoViewModel"
+            type="lbrands.com.ui.repo.repolist.RepoListViewModel" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/off_white">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listRepo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{repoViewModel.isLoading ? View.GONE:View.VISIBLE}"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+        <include
+            layout="@layout/progress_bar_background"
+            bind:isLoading="@{repoViewModel.isLoading}" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

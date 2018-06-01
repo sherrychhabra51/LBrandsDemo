@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LBrands Demo</string>
+    <string name="hint_username">Enter Username</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_login1">Log in</string>
+    <string name="login">Login</string>
+    <string name="watchers">Watchers: %d</string>
+    <string name="open_issues">Open Issue: %d</string>
+    <string name="size">Size: %d</string>
+    <string name="error_username">Please provide a valid username.</string>
+    <string name="error_network_not_responding">Network is not responding at the moment.Please retry after sometime.</string>
+    <string name="error_exception">OOPS!! Something went wrong.Please retry again.</string>
+    <string name="no_repo_available">No Repo Available</string>
+    
+    <string name="url"><![CDATA[<u><font color=#03529f>%s</font></u>]]></string>
+
+    <string name="watchers_detail">Watchers \n %d</string>
+    <string name="open_count_detail">Open Count \n %d</string>
+    <string name="size_detail">Size \n 200</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="logout_message">Do you really want to logout ?</string>
+</resources>
